@@ -1,6 +1,6 @@
 class CreateReviews < ActiveRecord::Migration
   def self.up
-    create_table :reviews do |t|
+    create_table :spree_reviews do |t|
       t.integer :product_id
       t.string  :name
       t.string  :location
@@ -13,6 +13,6 @@ class CreateReviews < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :reviews
+    drop_table :spree_reviews
   end
 end
